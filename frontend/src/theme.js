@@ -3,10 +3,11 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1976d2',
+      main: '#4B5320', // Verde militar como color principal
     },
     secondary: {
-      main: '#dc004e',
+      main: '#4B5320', // Verde militar para el outline del botón
+      contrastText: '#FFFFFF', // Blanco para el texto del botón secundario
     },
   },
 });
