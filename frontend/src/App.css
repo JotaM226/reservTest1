@@ -28,6 +28,11 @@
   color: #61dafb;
 }
 
+.custom-arrow:hover {
+  opacity: 1; /* Flechas completamente visibles al pasar el mouse */
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -14,34 +14,43 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-militaryGreen text-white shadow-md">
       <div className="container mx-auto flex justify-between items-center p-4">
-        {/* Logo */}
-        <h1 className="text-xl font-bold">Guerrero Mochica</h1>
+        {/* Logo y Nombre */}
+        <div className="flex items-center">
+          <div className="bg-white rounded-full p-2 mr-3">
+            {/* Espacio para el logo */}
+            <img src="/logo.png" alt="Depor Point Logo" className="h-8 w-8" />
+          </div>
+          <div className="text-left">
+            <h1 className="text-xl font-bold leading-none">Depor</h1>
+            <h2 className="text-sm font-bold leading-none">Point</h2>
+          </div>
+        </div>
 
-        {/* Menú para pantallas grandes */}
+        {/* Categorías (pantallas grandes) */}
         <ul className="hidden md:flex space-x-6">
           <li>
             <Link to="/" className="hover:text-gray-200">
-              Inicio
+              Alquila una cancha
+            </Link>
+          </li>
+          <li>
+            <Link to="/business" className="hover:text-gray-200">
+              Haz negocio con nosotros
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="hover:text-gray-200">
+              Nosotros
             </Link>
           </li>
           <li>
             <Link to="/login" className="hover:text-gray-200">
-              Iniciar Sesión
-            </Link>
-          </li>
-          <li>
-            <Link to="/register" className="hover:text-gray-200">
-              Registrarse
-            </Link>
-          </li>
-          <li>
-            <Link to="/profile" className="hover:text-gray-200">
-              Perfil
+              Regístrate/Ingresa
             </Link>
           </li>
         </ul>
 
-        {/* Icono de menú hamburguesa para pantallas pequeñas */}
+        {/* Menú hamburguesa (pantallas pequeñas) */}
         <div className="md:hidden">
           <IconButton onClick={toggleMenu} sx={{ color: 'white' }}>
             {menuOpen ? <CloseIcon /> : <MenuIcon />}
@@ -54,22 +63,22 @@ const Navbar = () => {
         <ul className="md:hidden bg-militaryGreen text-white flex flex-col items-center space-y-4 p-4">
           <li>
             <Link to="/" className="hover:text-gray-200" onClick={toggleMenu}>
-              Inicio
+              Alquila una cancha
+            </Link>
+          </li>
+          <li>
+            <Link to="/business" className="hover:text-gray-200" onClick={toggleMenu}>
+              Haz negocio con nosotros
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="hover:text-gray-200" onClick={toggleMenu}>
+              Nosotros
             </Link>
           </li>
           <li>
             <Link to="/login" className="hover:text-gray-200" onClick={toggleMenu}>
-              Iniciar Sesión
-            </Link>
-          </li>
-          <li>
-            <Link to="/register" className="hover:text-gray-200" onClick={toggleMenu}>
-              Registrarse
-            </Link>
-          </li>
-          <li>
-            <Link to="/profile" className="hover:text-gray-200" onClick={toggleMenu}>
-              Perfil
+              Regístrate/Ingresa
             </Link>
           </li>
         </ul>
