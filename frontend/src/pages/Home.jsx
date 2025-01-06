@@ -6,7 +6,7 @@ import HazNegocioConNosotros from '../components/HazNegocioConNosotros';
 
 const Home = () => {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen pt-32">
       {/* Contenedor principal con padding responsivo */}
       <div className="container mx-auto px-4 sm:px-2">
         {/* Título restaurado */}

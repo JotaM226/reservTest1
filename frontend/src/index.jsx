@@ -13,15 +13,3 @@ root.render(
     </ThemeProvider>
   </React.StrictMode>
 );
-// Calcular la altura real del viewport
-const setViewportHeight = () => {
-  const vh = window.innerHeight * 0.01; // Convertir el viewport height en unidades vh
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-};
-
-// Establecer la altura al cargar la página
-setViewportHeight();
-
-// Actualizar la altura cuando se redimensiona la ventana
-window.addEventListener('resize', setViewportHeight);
-
