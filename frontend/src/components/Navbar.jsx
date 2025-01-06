@@ -26,7 +26,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Categorías (pantallas grandes) */}
+        {/* Menú para pantallas grandes */}
         <ul className="hidden md:flex space-x-6">
           <li>
             <Link to="/" className="hover:text-gray-200">
@@ -50,7 +50,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Menú hamburguesa (pantallas pequeñas) */}
+        {/* Icono de menú hamburguesa para pantallas pequeñas */}
         <div className="md:hidden">
           <IconButton onClick={toggleMenu} sx={{ color: 'white' }}>
             {menuOpen ? <CloseIcon /> : <MenuIcon />}
