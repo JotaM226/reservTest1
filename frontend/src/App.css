@@ -2,6 +2,39 @@ html {
   overflow: overlay;
 }
 
+html, body {
+  height: 100%;
+}
+
+:root {
+  --vh: 1vh;
+}
+
+@supports (--css: variables) {
+  :root {
+    --vh: calc(1vh - env(safe-area-inset-bottom));
+  }
+}
+
+nav {
+  height: calc(10 * var(--vh));
+}
+
+body {
+  overflow: hidden;
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: #4B5320; /* Verde militar */
+}
+
+
+
 .App {
   text-align: center;
 }
