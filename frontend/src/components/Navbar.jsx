@@ -12,12 +12,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 w-full z-50 bg-militaryGreen text-white shadow-md">
+    <nav className="sticky top-0 z-50 bg-militaryGreen text-white shadow-md h-[100px] sm:h-[80px]">
+      {/* Espacio muerto superior */}
+      <div className="h-[20px] sm:h-[40px] bg-militaryGreen"></div>
+
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo y Nombre */}
         <div className="flex items-center">
           <div className="bg-white rounded-full p-2 mr-3">
-            {/* Espacio para el logo */}
             <img src="/logo.png" alt="Depor Point Logo" className="h-8 w-8" />
           </div>
           <div className="text-left">
@@ -50,7 +52,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Icono de menú hamburguesa para pantallas pequeñas */}
+        {/* Menú hamburguesa para pantallas pequeñas */}
         <div className="md:hidden">
           <IconButton onClick={toggleMenu} sx={{ color: 'white' }}>
             {menuOpen ? <CloseIcon /> : <MenuIcon />}

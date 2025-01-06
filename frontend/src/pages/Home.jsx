@@ -6,11 +6,11 @@ import HazNegocioConNosotros from '../components/HazNegocioConNosotros';
 
 const Home = () => {
   return (
-    <div className="bg-white min-h-screen pt-32">
+    <div className="bg-white min-h-screen pt-30">
       {/* Contenedor principal con padding responsivo */}
       <div className="container mx-auto px-4 sm:px-2">
         {/* Título restaurado */}
-        <h1 className="text-3xl sm:text-2xl font-bold text-center text-militaryGreen mb-8">
+        <h1 className="text-3xl sm:text-2xl font-bold text-center text-militaryGreen mb-8 pt-10">
           DeporPoint
         </h1>
         <BannerCarousel />

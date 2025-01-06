@@ -17,11 +17,11 @@ html, body {
 }
 
 nav {
-  height: calc(10 * var(--vh));
+  height: 60px;
 }
 
 body {
-  overflow: hidden;
+  overflow: auto;
   position: relative;
 }
 
