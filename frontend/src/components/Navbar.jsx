@@ -12,9 +12,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-militaryGreen text-white shadow-md h-[100px] sm:h-[80px]">
+    <nav className="sticky top-0 z-50 bg-militaryGreen text-white shadow-md h-[110px] sm:h-[90px]">
       {/* Espacio muerto superior */}
-      <div className="h-[20px] sm:h-[40px] bg-militaryGreen"></div>
+      <div className="h-[30px] sm:h-[40px] bg-militaryGreen"></div>
 
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo y Nombre */}
