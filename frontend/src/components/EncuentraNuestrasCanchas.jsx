@@ -16,11 +16,11 @@ const EncuentraNuestrasCanchas = () => {
       </div>
 
       {/* Contenido */}
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
         {/* Banner Publicitario Izquierdo */}
-        <div className="flex justify-center items-center md:col-span-1 h-80">
+        <div className="flex justify-center items-center md:col-span-1 h-20 sm:h-[50px]">
           <img
-            src="https://via.placeholder.com/300x200?text=Publicidad+1"
+            src="https://via.placeholder.com/300x50?text=Publicidad+1"
             alt="Publicidad 1"
             className="w-full h-full object-cover"
           />
@@ -36,9 +36,9 @@ const EncuentraNuestrasCanchas = () => {
         </div>
 
         {/* Banner Publicitario Derecho */}
-        <div className="flex justify-center items-center md:col-span-1 h-80">
+        <div className="flex justify-center items-center md:col-span-1 h-20 sm:h-[50px]">
           <img
-            src="https://via.placeholder.com/300x200?text=Publicidad+2"
+            src="https://via.placeholder.com/300x50?text=Publicidad+2"
             alt="Publicidad 2"
             className="w-full h-full object-cover"
           />

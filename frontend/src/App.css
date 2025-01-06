@@ -32,6 +32,26 @@
   opacity: 1; /* Flechas completamente visibles al pasar el mouse */
 }
 
+/* Estilos globales */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px; /* Para pantallas grandes */
+  margin: 0 auto;
+  padding: 16px; /* Espaciado interno */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 8px; /* Reducir padding en móviles */
+  }
+}
+
+
 
 @keyframes App-logo-spin {
   from {
