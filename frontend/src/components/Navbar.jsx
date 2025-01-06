@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-militaryGreen text-white shadow-md">
+    <nav className="sticky top-0 z-50 bg-militaryGreen text-white shadow-md" style={{ height: 'calc(10 * var(--vh))' }}>
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo y Nombre */}
         <div className="flex items-center">
